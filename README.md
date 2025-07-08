@@ -1,11 +1,19 @@
-# Imperial & US Customary Measurement Converter
+# Universal Measurement Converter
 
-A modern web application for converting between British Imperial and United States Customary units of measurement for length and weight.
+A modern web application for converting between Metric, British Imperial, and United States Customary units of measurement for length and weight.
 
 ## Features
 
 ### Length Conversions
-- **Inches (in)** - Base unit for display
+
+**Metric Units:**
+- **Millimeters (mm)** - Base metric length unit
+- **Centimeters (cm)** - 10 millimeters
+- **Meters (m)** - 100 centimeters / 1,000 millimeters
+- **Kilometers (km)** - 1,000 meters
+
+**Imperial/US Units:**
+- **Inches (in)** - Base unit for conversion calculations
 - **Feet (ft)** - 12 inches
 - **Yards (yd)** - 3 feet / 36 inches
 - **Chains (ch)** - 22 yards / 792 inches
@@ -13,7 +21,14 @@ A modern web application for converting between British Imperial and United Stat
 - **Miles (mi)** - 1,760 yards / 63,360 inches
 
 ### Weight Conversions
-- **Ounces (oz)** - Base unit for calculation
+
+**Metric Units:**
+- **Grams (g)** - Base metric weight unit
+- **Kilograms (kg)** - 1,000 grams
+- **Metric Tons (t)** - 1,000 kilograms
+
+**Imperial/US Units:**
+- **Ounces (oz)** - Base unit for conversion calculations
 - **Pounds (lb)** - 16 ounces
 - **Stones (st)** - 14 pounds (British Imperial)
 - **Quarters (qr)** - 28 pounds (British Imperial)
@@ -21,6 +36,13 @@ A modern web application for converting between British Imperial and United Stat
 - **Tons** - UK Long Ton: 2,240 pounds, US Short Ton: 2,000 pounds
 
 ## Key Differences Between Systems
+
+### Metric System
+- Base-10 system used worldwide
+- Kilogram = 1,000 grams
+- Metric Ton = 1,000 kilograms
+- Meter = 100 centimeters = 1,000 millimeters
+- Kilometer = 1,000 meters
 
 ### British Imperial System
 - Stone = 14 pounds
@@ -73,14 +95,16 @@ A modern web application for converting between British Imperial and United Stat
 ## Usage Examples
 
 ### Length Conversions
-- 1 mile = 5,280 feet = 1,760 yards = 1,584,000 inches
-- 1 furlong = 220 yards = 660 feet = 7,920 inches
-- 1 chain = 22 yards = 66 feet = 792 inches
+- **Metric**: 1 km = 1,000 m = 100,000 cm = 1,000,000 mm
+- **Imperial/US**: 1 mile = 5,280 feet = 1,760 yards = 63,360 inches
+- **Cross-system**: 1 km ≈ 0.621 miles, 1 mile ≈ 1.609 km
+- **Common**: 1 meter ≈ 3.28 feet, 1 inch ≈ 2.54 cm
 
 ### Weight Conversions
-- 1 stone = 14 pounds = 224 ounces
-- 1 UK ton = 2,240 pounds = 35,840 ounces
-- 1 US ton = 2,000 pounds = 32,000 ounces
+- **Metric**: 1 metric ton = 1,000 kg = 1,000,000 g
+- **Imperial**: 1 stone = 14 pounds = 224 ounces
+- **Cross-system**: 1 kg ≈ 2.205 pounds, 1 pound ≈ 453.6 grams
+- **Tons**: 1 metric ton ≈ 1.102 US tons ≈ 0.984 UK tons
 
 ## Getting Started
 

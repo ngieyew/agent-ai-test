@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imperial & US Customary Measurement Converter</title>
+    <title>Universal Measurement Converter - Metric, Imperial & US Customary</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Imperial & US Customary Measurement Converter</h1>
-            <p>Convert between British Imperial and United States Customary units</p>
+            <h1>Universal Measurement Converter</h1>
+            <p>Convert between Metric, British Imperial, and United States Customary units</p>
         </header>
 
         <main>
@@ -21,12 +21,20 @@
                         <label for="length-input">Enter Value:</label>
                         <input type="number" id="length-input" placeholder="Enter length value" step="any">
                         <select id="length-from-unit">
-                            <option value="inch">Inches (in)</option>
-                            <option value="foot">Feet (ft)</option>
-                            <option value="yard">Yards (yd)</option>
-                            <option value="mile">Miles (mi)</option>
-                            <option value="chain">Chains (ch)</option>
-                            <option value="furlong">Furlongs (fur)</option>
+                            <optgroup label="Metric Units">
+                                <option value="millimeter">Millimeters (mm)</option>
+                                <option value="centimeter">Centimeters (cm)</option>
+                                <option value="meter">Meters (m)</option>
+                                <option value="kilometer">Kilometers (km)</option>
+                            </optgroup>
+                            <optgroup label="Imperial/US Units">
+                                <option value="inch">Inches (in)</option>
+                                <option value="foot">Feet (ft)</option>
+                                <option value="yard">Yards (yd)</option>
+                                <option value="mile">Miles (mi)</option>
+                                <option value="chain">Chains (ch)</option>
+                                <option value="furlong">Furlongs (fur)</option>
+                            </optgroup>
                         </select>
                     </div>
                     
@@ -48,14 +56,21 @@
                         <label for="weight-input">Enter Value:</label>
                         <input type="number" id="weight-input" placeholder="Enter weight value" step="any">
                         <select id="weight-from-unit">
-                            <option value="ounce">Ounces (oz)</option>
-                            <option value="pound">Pounds (lb)</option>
-                            <option value="stone">Stones (st) - British</option>
-                            <option value="quarter">Quarters (qr) - British</option>
-                            <option value="hundredweight-uk">Hundredweight (cwt) - UK</option>
-                            <option value="hundredweight-us">Hundredweight (cwt) - US</option>
-                            <option value="ton-uk">Tons (UK Long Ton)</option>
-                            <option value="ton-us">Tons (US Short Ton)</option>
+                            <optgroup label="Metric Units">
+                                <option value="gram">Grams (g)</option>
+                                <option value="kilogram">Kilograms (kg)</option>
+                                <option value="metric-ton">Metric Tons (t)</option>
+                            </optgroup>
+                            <optgroup label="Imperial/US Units">
+                                <option value="ounce">Ounces (oz)</option>
+                                <option value="pound">Pounds (lb)</option>
+                                <option value="stone">Stones (st) - British</option>
+                                <option value="quarter">Quarters (qr) - British</option>
+                                <option value="hundredweight-uk">Hundredweight (cwt) - UK</option>
+                                <option value="hundredweight-us">Hundredweight (cwt) - US</option>
+                                <option value="ton-uk">Tons (UK Long Ton)</option>
+                                <option value="ton-us">Tons (US Short Ton)</option>
+                            </optgroup>
                         </select>
                     </div>
                     
@@ -73,6 +88,16 @@
             <div class="info-section">
                 <h3>System Information</h3>
                 <div class="info-grid">
+                    <div class="info-card">
+                        <h4>Metric System</h4>
+                        <ul>
+                            <li>1 kg = 1,000 grams</li>
+                            <li>1 metric ton = 1,000 kg</li>
+                            <li>1 m = 100 cm = 1,000 mm</li>
+                            <li>1 km = 1,000 meters</li>
+                            <li>Base-10 system (universal)</li>
+                        </ul>
+                    </div>
                     <div class="info-card">
                         <h4>British Imperial System</h4>
                         <ul>
@@ -97,7 +122,7 @@
         </main>
 
         <footer>
-            <p>&copy; 2024 Imperial & US Customary Measurement Converter</p>
+            <p>&copy; 2024 Universal Measurement Converter</p>
         </footer>
     </div>
 
