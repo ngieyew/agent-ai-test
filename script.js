@@ -1,5 +1,12 @@
 // Conversion factors to inches (base unit for length)
 const lengthToInches = {
+    // Metric units
+    millimeter: 0.0393701,  // 1 mm = 0.0393701 inches
+    centimeter: 0.393701,   // 1 cm = 0.393701 inches
+    meter: 39.3701,         // 1 m = 39.3701 inches
+    kilometer: 39370.1,     // 1 km = 39,370.1 inches
+    
+    // Imperial/US units
     inch: 1,
     foot: 12,
     yard: 36,
@@ -10,6 +17,12 @@ const lengthToInches = {
 
 // Conversion factors to ounces (base unit for weight)
 const weightToOunces = {
+    // Metric units
+    gram: 0.035274,     // 1 gram = 0.035274 ounces
+    kilogram: 35.274,   // 1 kg = 35.274 ounces
+    'metric-ton': 35274, // 1 metric ton = 35,274 ounces
+    
+    // Imperial/US units
     ounce: 1,
     pound: 16,
     stone: 224,  // 14 pounds × 16 ounces/pound
@@ -22,6 +35,13 @@ const weightToOunces = {
 
 // Unit display names
 const lengthUnits = {
+    // Metric units
+    millimeter: 'Millimeters (mm)',
+    centimeter: 'Centimeters (cm)',
+    meter: 'Meters (m)',
+    kilometer: 'Kilometers (km)',
+    
+    // Imperial/US units
     inch: 'Inches (in)',
     foot: 'Feet (ft)',
     yard: 'Yards (yd)',
@@ -31,6 +51,12 @@ const lengthUnits = {
 };
 
 const weightUnits = {
+    // Metric units
+    gram: 'Grams (g)',
+    kilogram: 'Kilograms (kg)',
+    'metric-ton': 'Metric Tons (t)',
+    
+    // Imperial/US units
     ounce: 'Ounces (oz)',
     pound: 'Pounds (lb)',
     stone: 'Stones (st) - British',
